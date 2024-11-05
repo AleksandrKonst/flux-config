@@ -14,12 +14,11 @@ spec:
         app: hello-world
     spec:
       containers:
-      - name: hello-world
-        image: ghcr.io/stefanprodan/podinfo:5.0.0  # {"$imagepolicy": "flux-system:hello-world-app-policy"}
-        ports:
-        - containerPort: 9898
-          protocol: TCP
-
+        - name: hello-world
+          image: ghcr.io/stefanprodan/podinfo:5.0.3 # {"$imagepolicy": "flux-system:hello-world-app-policy"}
+          ports:
+            - containerPort: 9898
+              protocol: TCP
 ---
 apiVersion: v1
 kind: Service
