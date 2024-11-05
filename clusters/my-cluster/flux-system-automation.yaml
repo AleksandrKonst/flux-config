@@ -11,7 +11,7 @@ spec:
         branch: main
     commit:
       author:
-#        email: fluxcdbot@users.noreply.github.com
+        email: genkonst5@gmail.com
         name: k.larin
       messageTemplate: '{{range .Changed.Changes}}{{print .OldValue}} -> {{println
         .NewValue}}{{end}}'
